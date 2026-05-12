@@ -1,0 +1,179 @@
+export type Product = {
+  slug: string;
+  name: string;
+  english: string;
+  description: string;
+  price: number;
+  category: string;
+  fabric: "Ankara" | "Kente" | "Adire" | "Aso-Oke" | "Batik";
+  origin: string;
+  colors: string[];
+  sizes: string[];
+  images: string[];
+  bestseller?: boolean;
+  newArrival?: boolean;
+};
+
+const img = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1000&q=80`;
+
+export const products: Product[] = [
+  {
+    slug: "iso-asa",
+    name: "Ìṣọ Àṣà",
+    english: "Ankara Wrap Dress",
+    description:
+      "A bold geometric Ankara wrap dress that drapes the body with the rhythm of the West African market. Each motif speaks of community, harvest and joy.",
+    price: 25000,
+    category: "Ankara Dresses",
+    fabric: "Ankara",
+    origin: "Yoruba heritage",
+    colors: ["#C2410C", "#F59E0B", "#1E3A1E"],
+    sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+    images: [
+      img("photo-1503342217505-b0a15ec3261c"),
+      img("photo-1485518882345-15568b007407"),
+      img("photo-1539109136881-3be0616acf4b"),
+    ],
+    bestseller: true,
+    newArrival: true,
+  },
+  {
+    slug: "ewu-idanioju",
+    name: "Ẹwù Ìdánilójú",
+    english: "Kente Peplum Top",
+    description:
+      "A confident Kente peplum top with fluted sleeves. Hand-loomed strips carry the proverbs of the Asante kingdom across the chest.",
+    price: 18500,
+    category: "Kente Wraps",
+    fabric: "Kente",
+    origin: "Kente — Ghanaian origin",
+    colors: ["#F59E0B", "#1E3A1E", "#7C2D12"],
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    images: [img("photo-1496747611176-843222e1e57c"), img("photo-1515886657613-9f3515b0c78f")],
+    bestseller: true,
+  },
+  {
+    slug: "buba-olorun",
+    name: "Bùbá Olórun",
+    english: "Adire Indigo Blouse",
+    description:
+      "A meditative Adire tie-dye blouse soaked in deep indigo. Every fold of the fabric was tied by hand before the dye spoke.",
+    price: 15000,
+    category: "Adire Tops",
+    fabric: "Adire",
+    origin: "Yoruba heritage",
+    colors: ["#1E3A8A", "#0F172A"],
+    sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+    images: [img("photo-1581338834647-b0fb40704e21"), img("photo-1602810318383-e386cc2a3ccf")],
+    newArrival: true,
+  },
+  {
+    slug: "iro-agbado",
+    name: "Ìró Àgbàdo",
+    english: "Aso-Oke Skirt Set",
+    description:
+      "A regal Aso-Oke skirt and top set woven in green and gold. Reserved for those who walk with the weight of celebration.",
+    price: 32000,
+    category: "Aso-Oke Sets",
+    fabric: "Aso-Oke",
+    origin: "Yoruba heritage",
+    colors: ["#1E3A1E", "#F59E0B"],
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    images: [img("photo-1610030469983-98e550d6193c"), img("photo-1605086050048-9d63d2ab78c4")],
+    bestseller: true,
+  },
+  {
+    slug: "oju-imole",
+    name: "Ọjú Ìmọ́lẹ̀",
+    english: "Batik Sunburst Maxi",
+    description:
+      "A Batik maxi dress whose sunburst pattern carries the morning light of the Niger delta across the silhouette.",
+    price: 22000,
+    category: "Ankara Dresses",
+    fabric: "Batik",
+    origin: "West African heritage",
+    colors: ["#C2410C", "#F59E0B", "#FFF7ED"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    images: [img("photo-1542295669297-4d352b042bca"), img("photo-1531928351158-2f736078e0a1")],
+    newArrival: true,
+  },
+  {
+    slug: "ewu-ife",
+    name: "Ẹwù Ìfẹ̀",
+    english: "Embroidered Dashiki Top",
+    description:
+      "A burgundy dashiki top with intricate neckline embroidery — soft enough for everyday, rich enough for ceremony.",
+    price: 13500,
+    category: "Adire Tops",
+    fabric: "Adire",
+    origin: "Pan-African heritage",
+    colors: ["#7C2D12", "#F59E0B"],
+    sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+    images: [img("photo-1551803091-e20673f15770"), img("photo-1544022613-e87ca75a784a")],
+  },
+  {
+    slug: "iso-ila-oorun",
+    name: "Ìṣọ Ìlà Oòrun",
+    english: "Sunrise Ankara Co-ord",
+    description:
+      "A two-piece Ankara co-ordinate set printed with the colours of the eastern sunrise — sharp tailoring meets soft confidence.",
+    price: 28000,
+    category: "Ankara Dresses",
+    fabric: "Ankara",
+    origin: "Yoruba heritage",
+    colors: ["#C2410C", "#F59E0B", "#1E3A1E"],
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    images: [img("photo-1529139574466-a303027c1d8b"), img("photo-1496747611176-843222e1e57c")],
+    bestseller: true,
+  },
+  {
+    slug: "agbada-iyawo",
+    name: "Àgbádá Ìyàwó",
+    english: "Bridal Aso-Oke Gown",
+    description:
+      "A ceremonial Aso-Oke bridal gown — heavy with hand-woven thread, light with the promise of a new name.",
+    price: 75000,
+    category: "Aso-Oke Sets",
+    fabric: "Aso-Oke",
+    origin: "Yoruba heritage",
+    colors: ["#F59E0B", "#FFF7ED", "#7C2D12"],
+    sizes: ["S", "M", "L", "XL"],
+    images: [img("photo-1594736797933-d0401ba2fe65"), img("photo-1606216794074-735e91aa2c92")],
+    newArrival: true,
+  },
+];
+
+export const categories = [
+  { slug: "Ankara Dresses", name: "Ankara Dresses", blurb: "Bold prints, fluid silhouettes" },
+  { slug: "Kente Wraps", name: "Kente Wraps", blurb: "Hand-loomed strips of meaning" },
+  { slug: "Aso-Oke Sets", name: "Aso-Oke Sets", blurb: "Ceremonial weight, modern cut" },
+  { slug: "Adire Tops", name: "Adire Tops", blurb: "Indigo dyed by patient hands" },
+  { slug: "Accessories", name: "Accessories", blurb: "Headwraps, beads, finishing touches" },
+];
+
+export const fabrics = ["Ankara", "Kente", "Adire", "Aso-Oke", "Batik"] as const;
+export const allSizes = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
+export const allColors = [
+  { name: "Terracotta", hex: "#C2410C" },
+  { name: "Gold", hex: "#F59E0B" },
+  { name: "Forest", hex: "#1E3A1E" },
+  { name: "Indigo", hex: "#1E3A8A" },
+  { name: "Burgundy", hex: "#7C2D12" },
+  { name: "Ivory", hex: "#FFF7ED" },
+];
+
+export const formatNaira = (n: number) =>
+  "₦" + n.toLocaleString("en-NG", { maximumFractionDigits: 0 });
+
+export function getProduct(slug: string) {
+  return products.find((p) => p.slug === slug);
+}
+
+export function relatedProducts(slug: string, count = 4) {
+  const p = getProduct(slug);
+  if (!p) return [];
+  return products
+    .filter((x) => x.slug !== slug)
+    .sort((a, b) => (a.category === p.category ? -1 : 1))
+    .slice(0, count);
+}
