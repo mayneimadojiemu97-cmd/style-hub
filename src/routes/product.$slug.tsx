@@ -29,7 +29,7 @@ export const Route = createFileRoute("/product/$slug")({
 });
 
 function ProductPage() {
-  const { product } = Route.useLoaderData();
+  const { product } = Route.useLoaderData() as { product: NonNullable<ReturnType<typeof getProduct>> };
   const [size, setSize] = useState(product.sizes[Math.floor(product.sizes.length / 2)]);
   const [qty, setQty] = useState(1);
   const [active, setActive] = useState(0);
