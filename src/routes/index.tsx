@@ -34,18 +34,18 @@ function Home() {
       <section className="relative overflow-hidden bg-forest text-ivory">
         <div className="absolute inset-0 opacity-30 pattern-adire" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-20 md:py-32 grid md:grid-cols-2 gap-10 items-center">
-          <div className="animate-float-up">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-accent">
+          <div>
+            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-accent animate-float-up">
               <Sparkles className="size-3.5" /> A women's house of African textile
             </span>
-            <h1 className="mt-4 font-serif text-5xl md:text-7xl font-bold leading-[1.05] text-balance">
+            <h1 className="mt-4 font-serif text-5xl md:text-7xl font-bold leading-[1.05] text-balance animate-float-up-delay-1">
               Wear Your Heritage. <span className="text-accent">Own Your Story.</span>
             </h1>
-            <p className="mt-5 text-base md:text-lg text-ivory/85 max-w-lg">
+            <p className="mt-5 text-base md:text-lg text-ivory/85 max-w-lg animate-float-up-delay-2">
               Àṣà & Style is a women's atelier celebrating the looms, dyers and tailors of Africa.
               Every piece is a love letter to the women who keep our culture alive.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3 animate-float-up-delay-2">
               <Button asChild size="lg" className="bg-accent text-foreground hover:bg-accent/90">
                 <Link to="/shop">Shop the collection <ArrowRight className="ml-1 size-4" /></Link>
               </Button>
@@ -56,9 +56,9 @@ function Home() {
           </div>
           <div className="relative aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=85"
-              alt="Woman in African print dress"
-              className="absolute inset-0 w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?auto=format&fit=crop&w=1200&q=85"
+              alt="Black African woman in traditional Ankara attire"
+              className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
             />
             <div className="absolute -bottom-1 -right-1 w-32 h-32 pattern-kente rounded-tl-2xl" aria-hidden />
           </div>
