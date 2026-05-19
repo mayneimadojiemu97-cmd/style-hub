@@ -87,7 +87,7 @@ function Home() {
             <Link
               key={c.slug}
               to="/shop"
-              className="group relative aspect-[4/5] rounded-xl overflow-hidden bg-muted"
+              className="category-tile group relative aspect-[4/5] rounded-xl overflow-hidden bg-muted block"
             >
               <img
                 src={`https://images.unsplash.com/photo-${
