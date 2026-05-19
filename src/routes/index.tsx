@@ -121,12 +121,12 @@ function Home() {
       </section>
 
       {/* CULTURAL STORY */}
-      <section className="bg-terracotta text-ivory">
+      <Reveal as="section" className="bg-terracotta text-ivory">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
           <div className="aspect-[5/4] rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
             <img
-              src="https://images.unsplash.com/photo-1581338834647-b0fb40704e21?auto=format&fit=crop&w=1000&q=85"
-              alt="Indigo dyer at work"
+              src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?auto=format&fit=crop&w=1000&q=85"
+              alt="Black African woman in traditional attire"
               className="w-full h-full object-cover"
             />
           </div>
@@ -143,10 +143,10 @@ function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </Reveal>
 
       {/* NEWSLETTER */}
-      <section className="mx-auto max-w-3xl px-4 sm:px-6 py-20 text-center">
+      <Reveal as="section" className="mx-auto max-w-3xl px-4 sm:px-6 py-20 text-center">
         <h2 className="font-serif text-3xl md:text-4xl">Join the tribe</h2>
         <p className="mt-3 text-muted-foreground">
           Get style inspiration, cultural notes and first access to new arrivals.
@@ -165,15 +165,15 @@ function Home() {
             placeholder="your@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="h-12"
+            className="h-12 rounded-md flex-1"
             required
           />
-          <Button type="submit" size="lg">Join</Button>
+          <Button type="submit" className="h-12 rounded-md px-8 text-sm">Join</Button>
         </form>
-      </section>
+      </Reveal>
 
       {/* TESTIMONIALS */}
-      <section className="bg-muted/40 border-y border-border/60">
+      <Reveal as="section" className="bg-muted/40 border-y border-border/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16">
           <h2 className="font-serif text-3xl md:text-4xl text-center mb-10">Worn with love</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -189,7 +189,7 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
     </div>
   );
 }
