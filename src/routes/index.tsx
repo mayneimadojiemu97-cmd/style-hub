@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ProductCard } from "@/components/ProductCard";
 import { products, categories } from "@/lib/products";
+import { Reveal } from "@/components/Reveal";
 import { toast } from "sonner";
 import { useState } from "react";
 
