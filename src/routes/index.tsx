@@ -56,7 +56,7 @@ function Home() {
           </div>
           <div className="relative aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?auto=format&fit=crop&w=1200&q=85"
+              src="https://images.unsplash.com/photo-1532076904124-d4e8fe7fbbec?auto=format&fit=crop&w=1200&q=85"
               alt="Black African woman in traditional Ankara attire"
               className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
             />
@@ -90,9 +90,9 @@ function Home() {
               className="category-tile group relative aspect-[4/5] rounded-xl overflow-hidden bg-muted block"
             >
               <img
-                src={`https://images.unsplash.com/photo-${
-                  ["1503342217505-b0a15ec3261c", "1496747611176-843222e1e57c", "1610030469983-98e550d6193c", "1581338834647-b0fb40704e21", "1515886657613-9f3515b0c78f"][i]
-                }?auto=format&fit=crop&w=600&q=80`}
+              src={`https://images.unsplash.com/photo-${
+                ["1760907949889-eb62b7fd9f75", "1720343354552-dbcdba68f7d7", "1763368160924-abab3611ea3e", "1756842583327-d72f68f92dbd", "1666974932375-90e8a25bc1ef"][i]
+              }?auto=format&fit=crop&w=600&q=80`}
                 alt={c.name}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500"
               />
@@ -125,7 +125,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
           <div className="aspect-[5/4] rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
             <img
-              src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?auto=format&fit=crop&w=1000&q=85"
+              src="https://images.unsplash.com/photo-1687052093309-7a14efa58ecb?auto=format&fit=crop&w=1000&q=85"
               alt="Black African woman in traditional attire"
               className="w-full h-full object-cover"
             />
