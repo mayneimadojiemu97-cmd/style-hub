@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ProductCard } from "@/components/ProductCard";
 import { products, categories } from "@/lib/products";
+import { Reveal } from "@/components/Reveal";
 import { toast } from "sonner";
 import { useState } from "react";
 
@@ -33,18 +34,18 @@ function Home() {
       <section className="relative overflow-hidden bg-forest text-ivory">
         <div className="absolute inset-0 opacity-30 pattern-adire" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-20 md:py-32 grid md:grid-cols-2 gap-10 items-center">
-          <div className="animate-float-up">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-accent">
+          <div>
+            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-accent animate-float-up">
               <Sparkles className="size-3.5" /> A women's house of African textile
             </span>
-            <h1 className="mt-4 font-serif text-5xl md:text-7xl font-bold leading-[1.05] text-balance">
+            <h1 className="mt-4 font-serif text-5xl md:text-7xl font-bold leading-[1.05] text-balance animate-float-up-delay-1">
               Wear Your Heritage. <span className="text-accent">Own Your Story.</span>
             </h1>
-            <p className="mt-5 text-base md:text-lg text-ivory/85 max-w-lg">
+            <p className="mt-5 text-base md:text-lg text-ivory/85 max-w-lg animate-float-up-delay-2">
               Àṣà & Style is a women's atelier celebrating the looms, dyers and tailors of Africa.
               Every piece is a love letter to the women who keep our culture alive.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3 animate-float-up-delay-2">
               <Button asChild size="lg" className="bg-accent text-foreground hover:bg-accent/90">
                 <Link to="/shop">Shop the collection <ArrowRight className="ml-1 size-4" /></Link>
               </Button>
@@ -55,9 +56,9 @@ function Home() {
           </div>
           <div className="relative aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=85"
-              alt="Woman in African print dress"
-              className="absolute inset-0 w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?auto=format&fit=crop&w=1200&q=85"
+              alt="Black African woman in traditional Ankara attire"
+              className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
             />
             <div className="absolute -bottom-1 -right-1 w-32 h-32 pattern-kente rounded-tl-2xl" aria-hidden />
           </div>
@@ -86,7 +87,7 @@ function Home() {
             <Link
               key={c.slug}
               to="/shop"
-              className="group relative aspect-[4/5] rounded-xl overflow-hidden bg-muted"
+              className="category-tile group relative aspect-[4/5] rounded-xl overflow-hidden bg-muted block"
             >
               <img
                 src={`https://images.unsplash.com/photo-${
@@ -120,12 +121,12 @@ function Home() {
       </section>
 
       {/* CULTURAL STORY */}
-      <section className="bg-terracotta text-ivory">
+      <Reveal as="section" className="bg-terracotta text-ivory">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
           <div className="aspect-[5/4] rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
             <img
-              src="https://images.unsplash.com/photo-1581338834647-b0fb40704e21?auto=format&fit=crop&w=1000&q=85"
-              alt="Indigo dyer at work"
+              src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?auto=format&fit=crop&w=1000&q=85"
+              alt="Black African woman in traditional attire"
               className="w-full h-full object-cover"
             />
           </div>
@@ -142,10 +143,10 @@ function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </Reveal>
 
       {/* NEWSLETTER */}
-      <section className="mx-auto max-w-3xl px-4 sm:px-6 py-20 text-center">
+      <Reveal as="section" className="mx-auto max-w-3xl px-4 sm:px-6 py-20 text-center">
         <h2 className="font-serif text-3xl md:text-4xl">Join the tribe</h2>
         <p className="mt-3 text-muted-foreground">
           Get style inspiration, cultural notes and first access to new arrivals.
@@ -164,15 +165,15 @@ function Home() {
             placeholder="your@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="h-12"
+            className="h-12 rounded-md flex-1"
             required
           />
-          <Button type="submit" size="lg">Join</Button>
+          <Button type="submit" className="h-12 rounded-md px-8 text-sm">Join</Button>
         </form>
-      </section>
+      </Reveal>
 
       {/* TESTIMONIALS */}
-      <section className="bg-muted/40 border-y border-border/60">
+      <Reveal as="section" className="bg-muted/40 border-y border-border/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16">
           <h2 className="font-serif text-3xl md:text-4xl text-center mb-10">Worn with love</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -188,7 +189,7 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
     </div>
   );
 }
