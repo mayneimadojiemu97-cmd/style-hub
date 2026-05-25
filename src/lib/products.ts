@@ -34,7 +34,7 @@ export const products: Product[] = [
     colors: ["#C2410C", "#F59E0B", "#1E3A1E"],
     sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
     images: [
-      img("photo-1687095942947-fc62072c6098"),
+      ankaraImg,
       img("photo-1614291129408-3dd5436942e6"),
       img("photo-1687095969938-65f637b28a46"),
     ],
@@ -53,7 +53,7 @@ export const products: Product[] = [
     origin: "Kente — Ghanaian origin",
     colors: ["#F59E0B", "#1E3A1E", "#7C2D12"],
     sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-    images: [img("photo-1726273561224-29c44e5114c8"), img("photo-1720343340446-7dfba2a92ceb")],
+    images: [kenteImg, img("photo-1720343340446-7dfba2a92ceb")],
     bestseller: true,
   },
   {
@@ -68,7 +68,7 @@ export const products: Product[] = [
     origin: "Yoruba heritage",
     colors: ["#1E3A8A", "#0F172A"],
     sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-    images: [img("photo-1756842583327-d72f68f92dbd"), img("photo-1601653233006-5c9fd30eab12")],
+    images: [adireImg, img("photo-1601653233006-5c9fd30eab12")],
     newArrival: true,
   },
   {
@@ -113,7 +113,7 @@ export const products: Product[] = [
     origin: "Pan-African heritage",
     colors: ["#7C2D12", "#F59E0B"],
     sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-    images: [img("photo-1627595359082-cc2b3487a40b"), img("photo-1664151101091-02a76363aeef")],
+    images: [adireImg, img("photo-1664151101091-02a76363aeef")],
   },
   {
     slug: "iso-ila-oorun",
@@ -127,7 +127,7 @@ export const products: Product[] = [
     origin: "Yoruba heritage",
     colors: ["#C2410C", "#F59E0B", "#1E3A1E"],
     sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-    images: [img("photo-1769349661389-0737f39a8507"), img("photo-1663044023437-6b3f9be28a90")],
+    images: [ankaraImg, img("photo-1663044023437-6b3f9be28a90")],
     bestseller: true,
   },
   {
