@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImage from "@/assets/hero.jpg";
+import ankaraCategoryImg from "@/assets/ankara-category.jpg";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -91,7 +92,7 @@ function Home() {
               className="category-tile group relative aspect-[4/5] rounded-xl overflow-hidden bg-muted block"
             >
               <img
-              src={`https://images.unsplash.com/photo-${
+              src={i === 0 ? ankaraCategoryImg : `https://images.unsplash.com/photo-${
                 ["1760907949889-eb62b7fd9f75", "1720343354552-dbcdba68f7d7", "1763368160924-abab3611ea3e", "1756842583327-d72f68f92dbd", "1666974932375-90e8a25bc1ef"][i]
               }?auto=format&fit=crop&w=600&q=80`}
                 alt={c.name}
