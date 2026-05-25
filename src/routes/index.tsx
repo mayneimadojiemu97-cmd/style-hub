@@ -46,7 +46,7 @@ function Home() {
               Àṣà & Style is a women's atelier celebrating the looms, dyers and tailors of Africa.
               Every piece is a love letter to the women who keep our culture alive.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3 animate-float-up-delay-2">
+            <div className="mt-8 flex flex-wrap gap-3 animate-float-up-delay-3">
               <Button asChild size="lg" className="bg-accent text-foreground hover:bg-accent/90">
                 <Link to="/shop">Shop the collection <ArrowRight className="ml-1 size-4" /></Link>
               </Button>
@@ -55,7 +55,7 @@ function Home() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl animate-float-up-delay-4">
             <img
               src={heroImage}
               alt="Black African woman in traditional Ankara attire"
