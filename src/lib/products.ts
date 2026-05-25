@@ -144,7 +144,22 @@ export const products: Product[] = [
     origin: "Yoruba heritage",
     colors: ["#F59E0B", "#FFF7ED", "#7C2D12"],
     sizes: ["S", "M", "L", "XL"],
-    images: [img("photo-1757140448921-f120d58546dc"), img("photo-1682904119073-aaf8ce0cf132")],
+    images: [asoOkeImg, img("photo-1682904119073-aaf8ce0cf132")],
+    newArrival: true,
+  },
+  {
+    slug: "bubu-olola",
+    name: "Bùbá Olólà",
+    english: "Bubu Gown",
+    description:
+      "A flowing Bubu gown in deep black with bold golden Aso-Oke striped panels. Effortless drape, regal presence — made for the woman who arrives without announcing herself.",
+    price: 42000,
+    category: "Aso-Oke Sets",
+    fabric: "Aso-Oke",
+    origin: "Yoruba heritage",
+    colors: ["#0d0d0d", "#F59E0B"],
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+    images: [bubuImg, img("photo-1682904119073-aaf8ce0cf132")],
     newArrival: true,
   },
 ];
