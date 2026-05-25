@@ -15,6 +15,7 @@ import { Footer } from "@/components/Footer";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { CartDrawer } from "@/components/CartDrawer";
 import { Toaster } from "@/components/ui/sonner";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 function NotFoundComponent() {
   return (
@@ -115,6 +116,7 @@ function RootComponent() {
           <MobileBottomNav />
           <CartDrawer />
           <Toaster position="top-center" />
+          <ScrollReveal />
         </div>
       </CartProvider>
     </QueryClientProvider>

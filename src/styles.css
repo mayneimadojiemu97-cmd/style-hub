@@ -213,3 +213,22 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Global scroll reveal (auto-applied to images and text via ScrollReveal) */
+.sr-init {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform;
+}
+.sr-init.sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .sr-init {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
