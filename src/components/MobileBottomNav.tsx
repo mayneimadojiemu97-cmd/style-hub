@@ -6,7 +6,7 @@ export function MobileBottomNav() {
   const { count, setOpen, wishlist } = useCart();
   const item = "flex flex-col items-center gap-1 text-[10px] font-medium text-muted-foreground hover:text-primary transition";
   return (
-    <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-background/95 backdrop-blur border-t border-border h-16 grid grid-cols-5 px-2">
+    <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-background/95 backdrop-blur border-t border-border py-3 grid grid-cols-5 px-2">
       <Link to="/" className={item} activeProps={{ className: item + " text-primary" }}>
         <Home className="size-5" /> Home
       </Link>
