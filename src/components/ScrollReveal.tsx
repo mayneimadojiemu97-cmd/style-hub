@@ -1,7 +1,13 @@
 import { useEffect } from "react";
 import { useRouter } from "@tanstack/react-router";
 
-const SELECTOR = "main img, main h1, main h2, main h3, main h4, main h5, main h6, main p, main blockquote, main figure, main li";
+const SELECTOR = [
+  "main img",
+  "main h1", "main h2", "main h3", "main h4", "main h5", "main h6",
+  "main p", "main blockquote", "main li",
+  "main figure", "main article", "main aside",
+  "main section > div",
+].join(", ");
 
 export function ScrollReveal() {
   const router = useRouter();
