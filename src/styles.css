@@ -165,11 +165,11 @@
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
-.animate-float-up { animation: float-up 0.5s ease-out both; }
-.animate-float-up-delay-1 { animation: float-up 0.5s ease-out 0.15s both; }
-.animate-float-up-delay-2 { animation: float-up 0.5s ease-out 0.3s both; }
-.animate-float-up-delay-3 { animation: float-up 0.5s ease-out 0.45s both; }
-.animate-float-up-delay-4 { animation: float-up 0.5s ease-out 0.6s both; }
+.animate-float-up { animation: float-up 0.5s ease-out 0.5s both; }
+.animate-float-up-delay-1 { animation: float-up 0.5s ease-out 0.6s both; }
+.animate-float-up-delay-2 { animation: float-up 0.5s ease-out 0.7s both; }
+.animate-float-up-delay-3 { animation: float-up 0.5s ease-out 0.8s both; }
+.animate-float-up-delay-4 { animation: float-up 0.5s ease-out 0.9s both; }
 
 .product-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -209,7 +209,7 @@
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: opacity 0.8s ease-out 0.5s, transform 0.8s ease-out 0.5s;
 }
 .reveal.is-visible {
   opacity: 1;
@@ -220,8 +220,14 @@
 .sr-init {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.5s;
   will-change: opacity, transform;
+}
+.sr-init:nth-child(3n+2) {
+  transition-delay: 0.6s, 0.6s;
+}
+.sr-init:nth-child(3n) {
+  transition-delay: 0.7s, 0.7s;
 }
 .sr-init.sr-visible {
   opacity: 1;
