@@ -1,3 +1,7 @@
+import ankaraImg from "@/assets/ankara.jpg";
+import adireImg from "@/assets/adire.jpg";
+import kenteImg from "@/assets/kente.jpg";
+
 export type Product = {
   slug: string;
   name: string;
