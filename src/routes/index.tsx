@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import heroImage from "@/assets/hero.jpg";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -56,7 +57,7 @@ function Home() {
           </div>
           <div className="relative aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1532076904124-d4e8fe7fbbec?auto=format&fit=crop&w=1200&q=85"
+              src={heroImage}
               alt="Black African woman in traditional Ankara attire"
               className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
             />
