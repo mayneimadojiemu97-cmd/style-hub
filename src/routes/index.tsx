@@ -43,7 +43,7 @@ function Home() {
             <h1 className="mt-4 font-serif text-5xl md:text-7xl font-bold leading-[1.05] text-balance animate-float-up-delay-1">
               Wear Your Heritage. <span className="text-accent">Own Your Story.</span>
             </h1>
-            <p className="mt-5 text-base md:text-lg text-ivory/85 max-w-lg animate-float-up-delay-2">
+            <p className="mt-5 text-base md:text-lg text-white max-w-lg animate-float-up-delay-2">
               Àṣà & Style is a women's atelier celebrating the looms, dyers and tailors of Africa.
               Every piece is a love letter to the women who keep our culture alive.
             </p>
@@ -51,7 +51,7 @@ function Home() {
               <Button asChild size="lg" className="bg-accent text-foreground hover:bg-accent/90">
                 <Link to="/shop">Shop the collection <ArrowRight className="ml-1 size-4" /></Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-ivory/40 text-ivory hover:bg-ivory hover:text-forest bg-transparent">
+              <Button asChild size="lg" variant="outline" className="border-white/40 text-white hover:bg-white hover:text-forest bg-transparent">
                 <Link to="/about">Our Story</Link>
               </Button>
             </div>
