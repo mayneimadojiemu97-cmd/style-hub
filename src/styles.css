@@ -182,7 +182,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .product-card-img {
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 .product-card:hover {
   transform: translateY(-6px);
