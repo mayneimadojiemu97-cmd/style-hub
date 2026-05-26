@@ -207,7 +207,7 @@
   100% { transform: scale(1.15) translate(-2%, -1.5%); }
 }
 .animate-ken-burns {
-  animation: ken-burns 16.67s ease-in-out infinite alternate;
+  animation: ken-burns 13s ease-in-out infinite alternate;
   transform-origin: center center;
   will-change: transform;
 }

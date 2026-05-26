@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImage from "@/assets/hero.jpg";
 import ankaraCategoryImg from "@/assets/ankara-category.jpg";
-import adireTopsImg from "@/assets/Adire_tops.jpg";
+import adireTopsImg from "@/assets/Adire_tops copy.jpg";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
