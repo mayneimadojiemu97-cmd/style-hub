@@ -165,11 +165,18 @@
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
-.animate-float-up { animation: float-up 0.5s ease-out 0.5s both; }
-.animate-float-up-delay-1 { animation: float-up 0.5s ease-out 0.6s both; }
-.animate-float-up-delay-2 { animation: float-up 0.5s ease-out 0.7s both; }
-.animate-float-up-delay-3 { animation: float-up 0.5s ease-out 0.8s both; }
-.animate-float-up-delay-4 { animation: float-up 0.5s ease-out 0.9s both; }
+.animate-float-up { animation: float-up 0.5s ease-out both; }
+.animate-float-up-delay-1 { animation: float-up 0.5s ease-out 0.1s both; }
+.animate-float-up-delay-2 { animation: float-up 0.5s ease-out 0.2s both; }
+.animate-float-up-delay-3 { animation: float-up 0.5s ease-out 0.3s both; }
+.animate-float-up-delay-4 { animation: float-up 0.5s ease-out 0.4s both; }
+
+/* Hero section page load animations */
+.hero .animate-float-up { animation: float-up 0.5s ease-out 0.5s both; }
+.hero .animate-float-up-delay-1 { animation: float-up 0.5s ease-out 0.6s both; }
+.hero .animate-float-up-delay-2 { animation: float-up 0.5s ease-out 0.7s both; }
+.hero .animate-float-up-delay-3 { animation: float-up 0.5s ease-out 0.8s both; }
+.hero .animate-float-up-delay-4 { animation: float-up 0.5s ease-out 0.9s both; }
 
 .product-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -200,7 +207,7 @@
   100% { transform: scale(1.15) translate(-2%, -1.5%); }
 }
 .animate-ken-burns {
-  animation: ken-burns 20s ease-in-out infinite alternate;
+  animation: ken-burns 16.67s ease-in-out infinite alternate;
   transform-origin: center center;
   will-change: transform;
 }
