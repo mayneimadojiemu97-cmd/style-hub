@@ -57,7 +57,7 @@ function Home() {
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl animate-float-up-delay-4">
+          <div className="relative aspect-[4/5] md:aspect-square overflow-hidden shadow-2xl animate-float-up-delay-4 hero-arch">
             <img
               src={heroImage}
               alt="Black African woman in traditional Ankara attire"
